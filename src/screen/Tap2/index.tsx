@@ -8,7 +8,7 @@ export const Tap2Screen = ({navigation}: PropsNavigation) => {
       <Text>Screen2</Text>
       <Button
         title="Next Screen"
-        onPress={() => navigation.navigate(ScreenNavigation.Tap3Screen)}
+        onPress={() => navigation.navigate(ScreenNavigation[2])}
       />
     </View>
   );
