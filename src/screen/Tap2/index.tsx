@@ -1,10 +1,15 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {Button, Text, View} from 'react-native';
+import {PropsNavigation, styles} from '../../index';
 
-export const Tap2Screen = () => {
+export const Tap2Screen = ({navigation}: PropsNavigation) => {
   return (
-    <View>
+    <View style={styles.globalMargin}>
       <Text>Screen2</Text>
+      <Button
+        title="Next Screen"
+        onPress={() => navigation.navigate('Tap3Screen')}
+      />
     </View>
   );
 };
