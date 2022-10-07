@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button, Text, View} from 'react-native';
-import {styles, PropsNavigation} from '../../index';
+import {styles, PropsNavigation, ScreenNavigation} from '../../index';
 
 export const Tap1Screen = ({navigation}: PropsNavigation) => {
   return (
@@ -8,7 +8,7 @@ export const Tap1Screen = ({navigation}: PropsNavigation) => {
       <Text>Screen1</Text>
       <Button
         title="Next Screen"
-        onPress={() => navigation.navigate('Tap2Screen')}
+        onPress={() => navigation.navigate(ScreenNavigation.Tap2Screen)}
       />
     </View>
   );
