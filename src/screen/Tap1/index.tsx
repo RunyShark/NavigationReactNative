@@ -12,12 +12,12 @@ export const Tap1Screen = ({navigation}: PropsNavigation) => {
       <Text style={styles.title}>Screen1</Text>
       <Button
         title="Next Screen"
-        onPress={() => navigation.navigate('Tap1Screen')}
+        onPress={() => navigation.navigate(PaginationProps.Tap2Screen)}
       />
       <Text>Navigate with arguments</Text>
       <TouchableOpacity
         onPress={() =>
-          navigation.navigate('PersonScreen', {
+          navigation.navigate(PaginationProps.PersonScreen, {
             id: 1,
             name: 'pedro',
           })

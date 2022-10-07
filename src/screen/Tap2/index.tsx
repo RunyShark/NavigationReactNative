@@ -19,7 +19,7 @@ export const Tap2Screen = ({navigation}: PropsNavigation) => {
       <Text style={styles.title}>Screen2</Text>
       <Button
         title="Next Screen"
-        onPress={() => navigation.navigate('Tap2Screen')}
+        onPress={() => navigation.navigate(PaginationProps.Tap3Screen)}
       />
     </View>
   );
