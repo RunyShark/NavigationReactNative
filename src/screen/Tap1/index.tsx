@@ -5,7 +5,7 @@ import {styles, PropsNavigation, ScreenNavigation} from '../../index';
 export const Tap1Screen = ({navigation}: PropsNavigation) => {
   return (
     <View style={styles.globalMargin}>
-      <Text>Screen1</Text>
+      <Text style={styles.title}>Screen1</Text>
       <Button
         title="Next Screen"
         onPress={() => navigation.navigate(ScreenNavigation[1])}

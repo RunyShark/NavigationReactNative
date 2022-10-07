@@ -8,10 +8,32 @@ const Stack = createStackNavigator();
 
 export const StackNavigation = () => {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="Tap1Screen" component={Tap1Screen} />
-      <Stack.Screen name="Tap2Screen" component={Tap2Screen} />
-      <Stack.Screen name="Tap3Screen" component={Tap3Screen} />
+    <Stack.Navigator
+      screenOptions={{
+        // headerShown: false,
+        headerStyle: {
+          elevation: 0,
+          shadowColor: 'transparent',
+        },
+        cardStyle: {
+          backgroundColor: 'white',
+        },
+      }}>
+      <Stack.Screen
+        name="Tap1Screen"
+        options={{title: 'Page 1'}}
+        component={Tap1Screen}
+      />
+      <Stack.Screen
+        name="Tap2Screen"
+        options={{title: 'Page 2'}}
+        component={Tap2Screen}
+      />
+      <Stack.Screen
+        name="Tap3Screen"
+        options={{title: 'Page 3'}}
+        component={Tap3Screen}
+      />
     </Stack.Navigator>
   );
 };
