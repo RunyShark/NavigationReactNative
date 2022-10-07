@@ -1,6 +1,9 @@
-import {StackScreenProps} from '@react-navigation/stack';
-
-export interface PropsNavigation extends StackScreenProps<any, any> {}
+export enum PaginationProps {
+  PersonScreen = 'PersonScreen',
+  Tap1Screen = 'Tap1Screen',
+  Tap2Screen = 'Tap2Screen',
+  Tap3Screen = 'Tap3Screen',
+}
 
 export enum ScreenNavigation {
   Tap1Screen,

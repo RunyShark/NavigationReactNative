@@ -4,7 +4,14 @@ import {createStackNavigator} from '@react-navigation/stack';
 // import {SafeAreaView} from 'react-native-safe-area-context';
 import {Tap1Screen, Tap2Screen, Tap3Screen, PersonScreen} from '../index';
 
-const Stack = createStackNavigator();
+export type RootStackParams = {
+  Tap1Screen: undefined;
+  Tap2Screen: undefined;
+  Tap3Screen: undefined;
+  PersonScreen: {id: number; name: string};
+};
+
+const Stack = createStackNavigator<RootStackParams>();
 
 export const StackNavigation = () => {
   return (

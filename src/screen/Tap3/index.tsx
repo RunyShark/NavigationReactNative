@@ -1,7 +1,9 @@
 import React from 'react';
-
+import {StackScreenProps} from '@react-navigation/stack/lib/typescript/src/types';
 import {Button, Text, View} from 'react-native';
-import {PropsNavigation, styles} from '../../index';
+import {PaginationProps, RootStackParams, styles} from '../../index';
+interface PropsNavigation
+  extends StackScreenProps<RootStackParams, PaginationProps.Tap3Screen> {}
 
 export const Tap3Screen = ({navigation}: PropsNavigation) => {
   return (
