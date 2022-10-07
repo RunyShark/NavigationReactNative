@@ -2,7 +2,7 @@ import 'react-native-gesture-handler';
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 // import {SafeAreaView} from 'react-native-safe-area-context';
-import {Tap1Screen, Tap2Screen, Tap3Screen} from '../index';
+import {Tap1Screen, Tap2Screen, Tap3Screen, PersonScreen} from '../index';
 
 const Stack = createStackNavigator();
 
@@ -33,6 +33,11 @@ export const StackNavigation = () => {
         name="Tap3Screen"
         options={{title: 'Page 3'}}
         component={Tap3Screen}
+      />
+      <Stack.Screen
+        name="PersonScreen"
+        options={{title: 'PersonScreen'}}
+        component={PersonScreen}
       />
     </Stack.Navigator>
   );

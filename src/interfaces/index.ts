@@ -6,4 +6,5 @@ export enum ScreenNavigation {
   Tap1Screen,
   Tap2Screen,
   Tap3Screen,
+  PersonScreen,
 }

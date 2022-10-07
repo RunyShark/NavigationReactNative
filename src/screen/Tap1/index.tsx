@@ -10,6 +10,10 @@ export const Tap1Screen = ({navigation}: PropsNavigation) => {
         title="Next Screen"
         onPress={() => navigation.navigate(ScreenNavigation[1])}
       />
+      <Button
+        title="Person Screen"
+        onPress={() => navigation.navigate(ScreenNavigation[3])}
+      />
     </View>
   );
 };
